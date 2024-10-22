@@ -1,0 +1,117 @@
+/*Colors*/
+
+
+
+.red{
+    background-color: rgb(222, 82, 82);
+}
+
+.green{
+    background-color: rgb(158, 214, 74);
+}
+
+.blue{
+    background-color: rgb(109, 109, 204);
+}
+
+
+
+/* buttons */
+
+.btn-group{
+    background-color: blue;
+}
+
+.btn-option {
+    background-color: #04AA6D; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px; /* Some padding */
+    margin: 1rem 0rem;
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    font-size: 120%;
+  }
+  
+.btn-group .btn-option:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+  
+/* background color on hover */
+.btn-group .btn-option:hover {
+    background-color: #3e8e41;
+}
+
+
+/* General stuff */
+.general-content{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    min-height: 50px;
+    background-color: rgb(245, 210, 167);
+}
+
+.title{
+    background-color: bisque;
+    border-radius: 25px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    width: 100%;
+    background-color: bisque;
+}
+
+/* HTML: <div class="ribbon">Your text content</div> */
+.ribbon {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .ribbon {
+    --s: 1.8em; /* the ribbon size */
+    --d: .8em;  /* the depth */
+    --c: .8em;  /* the cutout part */
+    
+    padding: 0 calc(var(--s) + .5em) var(--d);
+    line-height: 1.8;
+    background:
+      conic-gradient(at left  var(--s) bottom var(--d),
+       #0000 25%,#0008 0 37.5%,#0004 0) 0   /50% 100% no-repeat,
+      conic-gradient(at right var(--s) bottom var(--d),
+       #0004 62.5%,#0008 0 75%,#0000 0) 100%/50% 100% no-repeat;
+    clip-path: polygon(0 var(--d), var(--s) var(--d),var(--s) 0,calc(100% - var(--s)) 0,calc(100% - var(--s)) var(--d),100% var(--d),calc(100% - var(--c)) calc(50% + var(--d)/2),100% 100%,calc(100% - var(--s) - var(--d)) 100%,calc(100% - var(--s) - var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) 100%,0 100%,var(--c) calc(50% + var(--d)/2));
+    background-color: #CC333F; /* the main color */
+    width: fit-content;
+  }
+
+.ribbon-wide{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+/* HTML: <div class="rounded-tab"></div> */
+
+
+.rounded-tab {
+    --r: 25px; /* control the radius */
+    align-self: center;
+    font-size: 140%;
+    line-height: 1.8; /* control the height */
+    padding-inline: .5em;
+    border-inline: var(--r) solid #0000;
+    border-radius: calc(2*var(--r)) calc(2*var(--r)) 0 0/var(--r);
+    mask: 
+      radial-gradient(var(--r) at var(--r) 0,#0000 98%,#000 101%)
+        calc(-1*var(--r)) 100%/100% var(--r) repeat-x,
+      conic-gradient(#000 0 0) padding-box;
+    background: #bd5532 border-box; /* border-box is needed for a gradient coloration */
+    width: 100%;
+  }
